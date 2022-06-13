@@ -1,0 +1,247 @@
+h1 {
+    /* padding-top: 12px; */
+    margin-top: 63px;
+    margin-left: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+
+}
+
+body {
+    margin: 0;
+
+}
+
+/*h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}*/
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1100px;
+    height: 725px;
+    /* Позиционирование по центру */
+    margin: 0 auto;
+
+}
+
+.header {
+    /* background: linear-gradient(132.63deg, #E8D7BD 17.12%, #E6C590 82.95%); */
+    background-image: url('../img/start.jpg');
+    /* отступ на 25 пкс сверху для шапки */
+    padding-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    /* background-size: cover; */
+    /* background-position: center center; */
+}
+
+header a {
+    /* цвет ссылок в шапке */
+    color: #000;
+}
+
+.logo {
+    /* Создание отступов влево и вправо для логотипа */
+    /* смещение 2 px из за тени */
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.menu {
+    /* выравнивание в одну линию всех объектов */
+    display: flex;
+
+
+}
+
+.menu li {
+    /* командой ниже можно сделать все буквы заглавные */
+    /* text-transform: uppercase; */
+    /* создание пустых элементов в право на 50 пикселей от каждого элемента */
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+
+.menu li a::after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #000; /* Цвет линии */
+    width: 0px; /* Ширина линии до наведения */
+    margin: 5px auto 0; /* Отступ с боков по центру и сверху */
+    transition: 0.6s; /* Время, за которое линия возвращается после наведения */
+}
+
+.menu li a:hover::after {
+    width: 100%; /* Ширина линии при наведении */
+    transition: 0.3s; /* Время, за которое линия расширяется при наведении*/
+}
+
+#current {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .del {
+    margin-right: 0;
+}
+
+.pay {
+    /* margin-left: 1198px; */
+    margin-top: -12px;
+    margin-right: -35px;
+    transition: 0.5s ease;
+    float: right;
+
+}
+
+.pay:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.push {
+    padding: 31px 40px;
+    display: block;
+    align-items: center;
+    background: url('../img/push.svg') no-repeat;
+    /* margin-top: 10px; */
+    margin-left: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFF;
+    height: 29px;
+    width: 256px;
+    border-radius: 64px;
+    box-shadow: 0px 0px 15px #CD103D;
+    transition: all 0.5s ease;
+}
+
+
+/* изменение при наведении */
+.push:hover {
+    box-shadow: 0 0 0 0;
+
+
+}
+
+.about .container {
+    width: 1519px;
+    height: 750px;
+    /* Позиционирование по центру */
+    margin: 0 auto;
+
+
+}
+
+
+.katalog {
+    background: linear-gradient(117.91deg, #FFFFFF 3.25%, rgba(222, 224, 224, 0.63) 96.86%);
+    /* background-size: cover; */
+    margin-top: -184px;
+}
+
+
+.floating {
+    margin-top: -129px;
+    margin-left: -56px;
+}
+
+.floating a {
+    text-decoration: none;
+    margin-right: 43px;
+}
+
+
+.parrot {
+    /* margin-top: 50px; */
+    margin-left: 216px;
+    transition: all 0.5s ease;
+}
+
+.parrot:hover {
+    transform: scale(1.05);
+}
+
+.dog {
+    transition: all 0.5s ease;
+}
+
+.dog:hover {
+    transform: scale(1.05);
+}
+
+.katalog a {
+    margin-bottom: 0;
+    text-decoration: none;
+    margin-right: 43px;
+}
+
+.first {
+    margin-left: 790px;
+    padding-top: 104px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.first a img:hover {
+    transform: scale(1.05);
+}
+
+.first a img {
+    transition: all 0.5s ease;
+}
+
+.second {
+    margin-left: 155px;
+    padding-bottom: 25px;
+
+}
+
+.second a img {
+    transition: all 0.5s ease;
+}
+
+.second a img:hover {
+    transform: scale(1.05);
+}
