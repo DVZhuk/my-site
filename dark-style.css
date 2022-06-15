@@ -177,7 +177,7 @@ body {
   transition: box-shadow 100ms, background-color 100ms;
 }
 
-.button:hover{
+.button:hover {
   background-color: #8f4991;
   box-shadow: 0 4px 16px 8px rgba(143, 73, 145, 0.7);
 }
