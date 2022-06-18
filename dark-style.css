@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-width: 960px;
@@ -203,4 +207,45 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("dark-img/icon-phone.svg");
+}
+
+.up-button {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 75px;
+  left: 65px;
+}
+
+.up-button span{
+  margin-left: 10px;
+  font-size: 16px;
+  color: #8DAFF0;
+}
+
+.back {
+  cursor: pointer;
+  font-size: 14px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-image: url('dark-img/back-active.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 60px;
+  background-color: rgba(141, 175, 240, 0.4);
+  box-shadow: 0 0 16px 2px  rgba(141, 175, 240, 0.7);
+  border-radius: 50% ;
+  transition: 100ms;
+}
+
+.back:hover {
+  background-image: url('dark-img/back.svg');
+  box-shadow: 0 0 16px 2px #8DAFF0;
+}
+
+.shown {
+  display: flex;
+  align-items: center;
 }
