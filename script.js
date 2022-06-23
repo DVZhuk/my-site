@@ -1,7 +1,13 @@
 let upButton = document.querySelector('.up-button');
 let theme = document.querySelector('.theme');
 let themeButton = document.querySelector('.themes');
-let themeText = document.querySelector('.theme-text')
+let themeText = document.querySelector('.theme-text');
+// Ключ памяти темы
+let key = localStorage.getItem('key');
+if (key == 'theme light-theme') {
+  theme.classList.add('light-theme');
+};
+
 
 themeButton.onclick = function () {
   theme.classList.toggle('light-theme');
@@ -10,6 +16,8 @@ themeButton.onclick = function () {
   } else {
     themeText.textContent = 'Светлая тема';
   };
+  // Сохранение в память состаяния класса темы
+  localStorage.setItem('key', theme.classList);
 };
 
 window.onscroll = function () {

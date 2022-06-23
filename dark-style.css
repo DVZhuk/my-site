@@ -199,7 +199,7 @@ body {
 }
 
 .level-1 div {
-  margin-top: 1.5px;
+  margin-top: 2px;
 }
 
 .portfolio {
@@ -232,25 +232,25 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #712073;
+  background-color: #4136C1;
   color: #ffffff;
-  box-shadow:  0 4px 16px 8px rgba(113, 32, 115, 0.7);
+  box-shadow:  0 0px 16px 8px rgba(65, 54, 193, 0.7);
   transition: box-shadow 100ms, background-color 100ms;
 }
 
 .light-theme .button{
   background-color: #FF5500;
-  box-shadow: 0 4px 16px 8px rgba(255, 85, 0, 0.7);
+  box-shadow: 0 0px 16px 8px rgba(255, 85, 0, 0.7);
 }
 
 .button:hover {
-  background-color: #8f4991;
-  box-shadow: 0 4px 16px 8px rgba(143, 73, 145, 0.7);
+  background-color: #8A83E3;
+  box-shadow: 0 0px 16px 8px rgba(138, 131, 227, 0.7);
 }
 
 .light-theme .button:hover {
   background-color: #FF9A67;
-  box-shadow: 0 4px 16px 8px rgba(255, 154, 103, 0.7);
+  box-shadow: 0 0px 16px 8px rgba(255, 154, 103, 0.7);
 }
 
 .page-footer {
@@ -292,7 +292,7 @@ body {
 .up-button span {
   margin-left: 10px;
   font-size: 16px;
-  color: #8DAFF0;
+  color: #8A83E3;
 }
 
 .light-theme .up-button span {
@@ -310,24 +310,24 @@ body {
   background-position: left;
   background-size: 60px;
   background-color: rgba(141, 175, 240, 0.4);
-  box-shadow: 0 0 16px 2px  rgba(141, 175, 240, 0.7);
+  box-shadow: 0 0 16px 4px rgba(65, 54, 193, 0.7);
   border-radius: 50% ;
   transition: 100ms;
 }
 
 .light-theme .back {
   background-image: url('dark-img/back_l1.svg');
-  box-shadow: 0 4px 16px 8px rgba(255, 85, 0, 0.7);
+  box-shadow: 0 4px 16px 4px rgba(255, 85, 0, 0.7);
 }
 
 .back:hover {
   background-image: url('dark-img/back.svg');
-  box-shadow: 0 0 16px 2px #8DAFF0;
+  box-shadow: 0 0 16px 4px rgba(138, 131, 227, 0.7);
 }
 
 .light-theme .back:hover {
   background-image: url('dark-img/back_l2.svg');
-  box-shadow: 0 4px 16px 8px rgba(255, 154, 103, 0.7);
+  box-shadow: 0 4px 16px 4px rgba(255, 154, 103, 0.7);
 }
 
 .shown {
