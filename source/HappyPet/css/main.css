@@ -10,14 +10,28 @@ h1 {
 }
 
 body {
+    font-family: 'Montserrat', "Arial", sans-serif;
     margin: 0;
-    background-image: url('../img/start.jpg');
+    background: linear-gradient(132.63deg, #E8D7BD 17.12%, #E6C590 82.95%);
+
     background-repeat: no-repeat;
-    background-size: auto 760px;
+    background-size: 2560px;
     background-position: top center;
-    background-color: linear-gradient(117.91deg, #FFFFFF 3.25%, rgba(222, 224, 224, 0.63) 96.86%);
+
 
 }
+
+/* body::before {
+  content: '';
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-image: url("../img/cat_back.png");
+  background-repeat: no-repeat;
+} */
+
 
 /*h1, h2, h3, h4, h5, h6{
     padding: 0;
@@ -36,6 +50,10 @@ ul, li {
     /* background: linear-gradient(132.63deg, #E8D7BD 17.12%, #E6C590 82.95%); */
 
     /* отступ на 25 пкс сверху для шапки */
+    background-image: url("../img/cat_back.png");
+    background-repeat: no-repeat;
+    background-position: right 170px;
+    min-width: 1160px;
     padding-top: 25px;
     padding-left: 0;
     padding-right: 0;
@@ -190,4 +208,124 @@ header a {
 
 .katalog li img:hover {
   transform: scale(1.05);
+}
+
+
+/* Страница "О нас" */
+
+.about {
+  background: linear-gradient(132.63deg, #E8D7BD 17.12%, #E6C590 82.95%);
+  background-size: 2560px;
+}
+
+.about .header {
+  background-image: none;
+  min-width: auto;
+}
+
+.about-text {
+  width: 926px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.about-text h2 {
+  order: 2;
+  font-size: 32px;
+  margin-top: 42px;
+}
+
+.about-text p {
+  order: 1;
+  width: 926px;
+  font-size: 32px;
+  line-height: 50px;
+  margin-top: 42px;
+}
+
+.about-text ul {
+  order: 3;
+  margin-top: 21px;
+}
+
+.about-text ul li{
+  display: list-item;
+  font-size: 24px;
+  line-height: 50px;
+  margin-left: 22px;
+}
+
+.contacts {
+  width: 520px;
+  margin-left: 140px;
+}
+
+.contacts h2 {
+  margin-top: 42px;
+  font-size: 32px;
+}
+
+.contacts p, a {
+  margin-top: 0px;
+  font-size: 24px;
+}
+
+
+
+.vk::before {
+  content: "";
+  visibility: visible;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/vk-logo.svg");
+  background-size: 70px 70px;
+  margin-right: 30px;
+  transition: all 200ms;
+}
+
+.instagram::before {
+  content: "";
+  visibility: visible;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/inst-logo.svg");
+  background-size: 70px 70px;
+  transition: all 200ms;
+}
+
+.vk:hover::before {
+  background-image: url("../img/vk-logo-focus.svg");
+}
+
+.instagram:hover::before {
+  background-image: url("../img/inst-logo-focus.svg");
+}
+
+.phone {
+  text-decoration: none;
+  display: block;
+  font-weight: 300;
+
+}
+
+.whatsapp {
+
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/wp-logo.svg");
+  background-size: 70px 70px;
+  transition: all 200ms;
+  margin-right: 30px;
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp:hover {
+  background-image: url("../img/wp-logo-focus.svg");
 }
